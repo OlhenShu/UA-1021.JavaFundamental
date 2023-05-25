@@ -51,6 +51,7 @@ class Person {
 		this.lastName = innerSc.nextLine();
 		System.out.print("Birth year: ");
 		this.birthYear = innerSc.nextInt();
+		innerSc.nextLine();
 	}
 
 	public void output() {
@@ -60,8 +61,6 @@ class Person {
 }
 
 public class Main{
-	static Scanner sc = new Scanner(System.in);
-	
 	public static void main(String args[]) {
 		Person person1 = new Person();
 		System.out.println("Please, input your data for person 1");
