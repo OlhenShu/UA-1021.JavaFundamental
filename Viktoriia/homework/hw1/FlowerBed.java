@@ -1,4 +1,4 @@
-package Viktoriia.hw1;
+package Viktoriia.homework.hw1;
 
 import java.util.Scanner;
 
