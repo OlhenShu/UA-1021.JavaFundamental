@@ -1,27 +1,10 @@
+package Viktoriia.hw1;
+
 import java.util.Scanner;
 
-public class hw1 {
+public class PhoneCallCost {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // 1.
-        System.out.println("Enter radius of flower bed:");
-        double r = scanner.nextDouble();
-        double perimeter = Math.PI * 2 * r;
-        double area = Math.PI * r * r;
-        System.out.printf("Flower bed perimeter: %.2f; radius: %.2f", perimeter, area);
-
-        // 2.
-        String name;
-        String address;
-        System.out.println("\nWhats you name?");
-        name = scanner.nextLine(); //пропускає цю операцію
-        name = scanner.nextLine();
-        System.out.println("Where do you live, " + name + "?");
-        address = scanner.nextLine();
-        System.out.println("Your name is " + name + ". Your address is " + address);
-
-        // 3.
         System.out.println("Enter first cost per minute:");
         double c1 = scanner.nextDouble();
         System.out.println("Enter second cost per minute:");
