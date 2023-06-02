@@ -1,5 +1,7 @@
 package Viktoriia.practicalTasks.pt3;
 
+import java.util.Scanner;
+
 public class Employee {
     private String name;
     private int rate;
@@ -17,10 +19,8 @@ public class Employee {
         totalSum+= (rate * hours);
     }
 
-    public Employee(int rate, int hours) {
-        this.rate = rate;
-        this.hours = hours;
-        totalSum+= (rate * hours);
+    public Employee(String name) {
+        this.name = name;
     }
 
     public int getSalary() {
@@ -36,9 +36,31 @@ public class Employee {
     }
 
     public static void main(String[] args) {
-        Employee one = new Employee("John", 35, 70);
-        Employee two = new Employee(45, 40);
-        Employee three = new Employee();
+        Scanner scanner = new Scanner(System.in);
+        String emplName;
+        int emplRate;
+        int emplHours;
+        System.out.println("Enter name of first employee:");
+        emplName = scanner.nextLine();
+        System.out.println("Enter rate of first employee:");
+        emplRate = scanner.nextInt();
+        System.out.println("Enter hours of first employee:");
+        emplHours = scanner.nextInt();
+        Employee one = new Employee(emplName, emplRate, emplHours);
+        System.out.println("Enter name of second employee:");
+        emplName = scanner.nextLine();
+        System.out.println("Enter rate of second employee:");
+        emplRate = scanner.nextInt();
+        System.out.println("Enter hours of second employee:");
+        emplHours = scanner.nextInt();
+        Employee two = new Employee(emplName, emplRate, emplHours);
+        System.out.println("Enter name of third employee:");
+        emplName = scanner.nextLine();
+        System.out.println("Enter rate of third employee:");
+        emplRate = scanner.nextInt();
+        System.out.println("Enter hours of third employee:");
+        emplHours = scanner.nextInt();
+        Employee three = new Employee(emplName, emplRate, emplHours);
         System.out.println("The total salary of employees is " + totalSum);
     }
 }

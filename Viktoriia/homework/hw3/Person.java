@@ -34,11 +34,9 @@ public class Person {
         System.out.println("The first name is " + firstName + ", the last name is " + lastName + ", the age is " + getAge());
     }
 
-    public void changeName(String...name){
-        this.firstName = name[0];
-        if(name[1] != null) {
-            this.lastName = name[1];
-        }
+    public void changeName(String fn, String ln){
+        this.firstName = fn;
+        this.lastName = ln;
     }
 
     public static void main(String[] args) {
