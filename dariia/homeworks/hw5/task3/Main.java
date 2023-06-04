@@ -1,33 +1,38 @@
 package hw5.task3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
 
 	static Scanner sc = new Scanner(System.in);
 
-	// the algorithm below was inspired by some Internet resources, 
-	// though it doesn't resize and create a new array
-	static int deleteDuplicates(int[] arr, int arrayLength) {
+	// the algorithm below was inspired by some Internet resource
+	// push all duplicates to the end
+	// cut off all duplicates by pushing all origin elemments to the new array
+	static int[] deleteDuplicates(int[] arr, int arrayLength) {
 		if (arrayLength == 0 || arrayLength == 1) {
-			return arrayLength;
+			return arr;
 		}
 		int[] temp = new int[arrayLength];
-		int j = 0;
+		int lastOrigin = 0;
 		for (int i =0; i < arrayLength - 1; i++) {
 			if(arr[i] != arr[i+1]) { 
-			temp[j++] = arr[i];
+			temp[lastOrigin++] = arr[i];
 			}
 		}
 		
-		temp[j++] = arr[arrayLength-1];
+		temp[lastOrigin++] = arr[arrayLength-1];
 		
-		for (int i = 0; i < j; i++) {
+		for (int i = 0; i < lastOrigin; i++) {
 			arr[i] = temp[i];
 		}
 		
+		int[] newArr = new int[arrayLength - lastOrigin];
+		System.arraycopy(arr, 0, newArr, 0, lastOrigin);
+		
 		// "new" length
-		return j;
+		return newArr;
 		
 		// my own try on implementing remove of duplicates and resizing array, 
 		// but it only works once and finds only one pair of duplicates
@@ -87,23 +92,25 @@ public class Main {
 		Car car2 = new Car("Suzuki", 2004, 4);
 		Car car3 = new Car("Nissan", 2005, 3);
 		Car car4 = new Car("Isuzu", 2003, 5);
+		Car car5 = new Car("Isuzu2", 2003, 5);
+		Car car6 = new Car("Nissan2", 2005, 3);
 
-		Car[] cars = { car1, car2, car3, car4 };
+		Car[] cars = { car1, car2, car3, car4, car5, car6 };
 
 		// 1
-		System.out.println("please, type which year is to your taste: [2003, 2004, 2015]");
-		int year = sc.nextInt();
-		for (Car car : cars) {
-			if (car.getYearOfProduction() == year) {
-				System.out.println(car.getType() + " (" + car.getYearOfProduction() + ")");
-			}
-		}
+//		System.out.println("please, type which year is to your taste: [2003, 2004, 2015]");
+//		int year = sc.nextInt();
+//		for (Car car : cars) {
+//			if (car.getYearOfProduction() == year) {
+//				System.out.println(car.getType() + " (" + car.getYearOfProduction() + ")");
+//			}
+//		}
 
 		// 2
 		int[] sortedYears = sortYears(cars);
-		int arrayLength = sortedYears.length;
 		// + delete duplicates
-		arrayLength = deleteDuplicates(sortedYears, arrayLength);
+		sortedYears = deleteDuplicates(sortedYears, sortedYears.length);
+//		System.out.println(Arrays.toString(sortedYears));
 		System.out.println("\nsorted cars by their year of production: ");
 		int count = 0;
 		int currYear;
@@ -114,6 +121,6 @@ public class Main {
 					System.out.println(car.getType() + " (" + car.getYearOfProduction() + ")");
 				}
 			}
-		} while (count < arrayLength);
+		} while (count < sortedYears.length);
 	}
 }
