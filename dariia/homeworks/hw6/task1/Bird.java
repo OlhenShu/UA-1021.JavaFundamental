@@ -5,9 +5,7 @@ public abstract class Bird {
 	int layEggs;
 	String name;
 
-	void fly() {
-	}
+	abstract void fly();
 
-	void outputInfo() {
-	}
+	abstract void outputInfo();
 }
