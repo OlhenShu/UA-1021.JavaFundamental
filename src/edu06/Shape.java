@@ -1,4 +1,4 @@
-package edu07;
+package edu06;
 
 public abstract class Shape {    // because this is an abstract method 
     // the body will be blank

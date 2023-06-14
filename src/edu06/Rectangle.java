@@ -1,4 +1,4 @@
-package edu07;
+package edu06;
 
 public class Rectangle {
     protected int width;
