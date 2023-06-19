@@ -1,4 +1,4 @@
-package edu07;
+package edu06;
 
 //public class Parallelogram extends Rectangle {
 //    private int angle;

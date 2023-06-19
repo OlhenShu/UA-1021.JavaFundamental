@@ -1,4 +1,4 @@
-package edu07.composition;
+package edu06.composition;
 
 public class ComputerTest {
     public static void main(String[] args) {

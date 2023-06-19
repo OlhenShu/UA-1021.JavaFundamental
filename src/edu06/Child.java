@@ -1,4 +1,4 @@
-package edu07;
+package edu06;
 
 public class Child extends Parent {
     int f() {

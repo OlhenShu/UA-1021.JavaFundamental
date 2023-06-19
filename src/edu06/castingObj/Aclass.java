@@ -1,4 +1,4 @@
-package edu07.castingObj;
+package edu06.castingObj;
 
 class Aclass {
     int field1 = 10;

@@ -1,4 +1,4 @@
-package edu07.app;
+package edu06.app;
 
 public class ClassA {
     public int i = 1;

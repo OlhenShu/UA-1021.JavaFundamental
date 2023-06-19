@@ -1,4 +1,4 @@
-package edu07.casting;
+package edu06.casting;
 
 public class DemoCasting {
     public static void main(String[] args) {
