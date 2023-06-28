@@ -55,10 +55,10 @@ public class Student {
 		}
 		return newList;
 	}
-
-	public void printStudents(List<Student> list, int courseID) {
+	
+	public static void printCourseStudents(List<Student> list, int courseID) {
 		int count = 0;
-		System.out.println("Students of the course " + course + ":");
+		System.out.println("Students of the course " + courseID + ":");
 		for (Student student : list) {
 			if (student.course == courseID) {
 				System.out.println(student.name);

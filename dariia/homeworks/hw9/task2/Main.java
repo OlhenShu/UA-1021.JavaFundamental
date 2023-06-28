@@ -25,13 +25,13 @@ public class Main {
 		st3.addGrades("History", 9);
 		
 		
-//		for (Student student : students) {
-//			System.out.println("============================================");
-//			student.printInfo();
-//			System.out.println("--------------------------------------------");
-//			student.getGrades();
-//			System.out.println("============================================");
-//		}
+		for (Student student : students) {
+			System.out.println("============================================");
+			student.printInfo();
+			System.out.println("--------------------------------------------");
+			student.getGrades();
+		}
+		System.out.println("============================================");
 		
 		System.out.println("list of students before checking grades:");
 		for (Student st : students) {
@@ -44,6 +44,12 @@ public class Main {
 		for (Student st : students) {
 			System.out.print(st.getName() + " ");
 		}
+		
+		System.out.println("\n============================================");
+		
+		Student.printCourseStudents(students, 1);	// 0
+		Student.printCourseStudents(students, 4);	// 1: Bob
+		Student.printCourseStudents(students, 3);	// 2: Alice and Caroline
 	}
 
 }
