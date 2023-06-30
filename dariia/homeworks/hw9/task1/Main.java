@@ -8,7 +8,7 @@ import java.util.*;
 Use one or more of the next: List, ArrayList, LinkedList
  */
 
-public class Task1 {
+public class Main {
 
 	public static void main(String[] args) {
 		List<Integer> myCollection = new LinkedList<Integer>();
