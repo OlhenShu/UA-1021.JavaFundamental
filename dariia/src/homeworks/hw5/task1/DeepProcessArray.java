@@ -1,4 +1,4 @@
-package hw5.task1;
+package homeworks.hw5.task1;
 
 public class DeepProcessArray {
 	protected static int findSecondPositive(int[] arr) {

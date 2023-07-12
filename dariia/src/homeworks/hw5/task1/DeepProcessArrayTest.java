@@ -1,4 +1,4 @@
-package hw5.task1;
+package homeworks.hw5.task1;
 
 import static org.junit.jupiter.api.Assertions.*;
 

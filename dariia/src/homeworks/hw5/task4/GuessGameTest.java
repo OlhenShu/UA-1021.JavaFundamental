@@ -1,7 +1,8 @@
-package hw5.task4;
+package homeworks.hw5.task4;
 
-import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.fail;
 
 class GuessGameTest {
 

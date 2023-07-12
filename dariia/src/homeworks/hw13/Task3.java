@@ -1,4 +1,4 @@
-package hw13;
+package homeworks.hw13;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;

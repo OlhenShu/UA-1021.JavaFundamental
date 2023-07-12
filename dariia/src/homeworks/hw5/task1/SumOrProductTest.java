@@ -1,8 +1,8 @@
-package hw5.task1;
-
-import static org.junit.jupiter.api.Assertions.*;
+package homeworks.hw5.task1;
 
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SumOrProductTest {
 

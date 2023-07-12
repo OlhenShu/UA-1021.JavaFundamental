@@ -1,4 +1,4 @@
-package hw5.task4;
+package homeworks.hw5.task4;
 
 import java.util.InputMismatchException;
 import java.util.Random;

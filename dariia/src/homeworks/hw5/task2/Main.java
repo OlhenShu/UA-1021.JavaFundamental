@@ -1,4 +1,4 @@
-package hw5.task2;
+package homeworks.hw5.task2;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package hw5.task1;
+package homeworks.hw5.task1;
 
 public class MonthDays {
 	private static String[] monthDays = { "31 (January)", "28 (February)", "31 (March)", "30 (April)", "31 (May)",

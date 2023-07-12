@@ -1,4 +1,4 @@
-package hw5.task3;
+package homeworks.hw5.task3;
 
 public class Car {
 	private String type;

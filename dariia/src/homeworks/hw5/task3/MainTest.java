@@ -1,4 +1,4 @@
-package hw5.task3;
+package homeworks.hw5.task3;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.*;

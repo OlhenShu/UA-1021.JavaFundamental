@@ -1,4 +1,4 @@
-package hw13;
+package homeworks.hw13;
 
 /*
  * Create two methods String encrypt(String s, int n) and String decrypt(Stirng s, int n)

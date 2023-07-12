@@ -1,4 +1,4 @@
-package hw5.task1;
+package homeworks.hw5.task1;
 
 import java.util.Scanner;
 import java.util.Arrays;
