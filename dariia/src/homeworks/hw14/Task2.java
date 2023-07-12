@@ -1,5 +1,6 @@
 package homeworks.hw14;
 
+// NEEDS TO BE RE-DONE!!!! NOT COMPLETED YET
 // Cause a deadlock. Organize the expectations of ending a thread in main(),
 // and make the end of the method main() in this thread
 
